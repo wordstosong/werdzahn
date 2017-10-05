@@ -13,23 +13,43 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-var title = 'Speak Louder!';
+var title = 'werdzahn';
 
 app.get('/', function (req, res) {
     res.render('home', { title: title });
+});
+
+app.get('/movies', function (req, res) {
+    res.render('movies', { title: title + ' | Movies' });
+});
+
+app.get('/tv', function (req, res) {
+    res.render('tv', { title: title + ' | TV' });
+});
+
+app.get('/music', function (req, res) {
+    res.render('music', { title: title + ' | Music' });
+});
+
+app.get('/games', function (req, res) {
+    res.render('games', { title: title + ' | Games' });
+});
+
+app.get('/culture', function (req, res) {
+    res.render('culture', { title: title + ' | Culture' });
+});
+
+app.get('/reviews', function (req, res) {
+    res.render('reviews', { title: title + ' | Reviews' });
 });
 
 app.get('/about', function (req, res) {
     res.render('about', { title: title + ' | About' });
 });
 
-app.get('/archive', function (req, res) {
-    res.render('archive', { title: title + ' | Archive' });
-});
 
-app.get('/cast', function (req, res) {
-    res.render('cast', { title: title + ' | Cast' });
-});
+
+
 
 app.use(expressServer.static('public'));
 

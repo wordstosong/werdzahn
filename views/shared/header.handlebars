@@ -1,21 +1,33 @@
 <header>
-    <nav>
-        <div class="social-headers">
-            <a href="#facebook"><img src="images/facebook-header-icon.svg" alt="Facebook Header Icon"></a>
-            <a href="https://twitter.com/WordsToSong" target="_blank"><img src="images/twitter-header-icon.svg" alt="Twitter Header Icon"></a>
-            <a href="http://wordstosong.tumblr.com/" target="_blank"><img src="images/tumblr-header-icon.svg" alt="Tumblr Header Icon"></a>
-        </div>
-        <a aria-label="Speak Louder!" class="logo" href="/">
-        </a>
-        <a aria-label="Speak Louder!" class="logo-small" href="/">
-        </a>
-        <div class="menu">
-            <ul>
-                <li><a href="/archive">Archive</a></li>
-                <li><a href="/cast">Cast</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </div>
-        <div class="burger"><a href="#nav">&equiv;</a></div>
-    </nav>
+    <div class="logo">
+        <a href="/"><img src="images/header/logo/werdzahn-logo.svg" alt="Werdzahn Logo"></a>
+    {{!-- <div class="logo-small">
+        <a href="/"><img src="images/header/logo/werdzahn-logo-small.svg" alt="Werdzahn Logo Small"></a>
+    </div> --}}
+    </div>
+    <div class="social-headers">
+        <a href="#facebook"><img src="images/facebook-header-icon.svg" alt="Facebook Header Icon"></a>
+        <a href="https://twitter.com/WordsToSong" target="_blank"><img src="images/twitter-header-icon.svg" alt="Twitter Header Icon"></a>
+        <a href="http://wordstosong.tumblr.com/" target="_blank"><img src="images/tumblr-header-icon.svg" alt="Tumblr Header Icon"></a>
+    </div>
+    
 </header>
+<nav>
+    {{!-- <div class="logo-mobile">
+         <a href="/"><img src="images/header/logo/werdzahn-logo-mobile.svg" alt="Werdzahn Logo"></a>
+    </div>     --}}
+    <div class="menu">
+        <ul class="navcat">
+            <li><a href="/movies">Movies</a></li>
+            <li><a href="/tv">TV</a></li>
+            <li><a href="/music">Music</a></li>
+            {{!-- <li><a href="/games">Games</a></li> --}}
+            <li><a href="/culture">Culture</a></li>
+        </ul>
+        <ul class="navsub">
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+        <div class="burger"><a href="#nav">&equiv;</a></div>
+</nav>

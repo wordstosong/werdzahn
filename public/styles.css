@@ -1,40 +1,53 @@
 body {
-  background: linear-gradient(45deg, #304d83, #667c92);
+  background: #f2f2f2;
   margin: 0;
 }
 
+header {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 nav {
-  width: 100%;
-  max-width: 440px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-top: 50px; */
+  /* width: 100%; */
+  /* max-width: 440px; */
+  height: 50px;
+  /* margin-left: auto;
+  margin-right: auto; */
   font-family: 'PT Sans';
-  font-size: 20px;
-  font-weight: 400;
   position: relative;
-  background: #333;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  /* margin-bottom: 20px; */
+  text-transform: uppercase;
 }
 
 .logo {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 110px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 12px;
+}
+/* .logo-mobile {
+  display: block;
+  height: 10px;
+}  width: auto; */
+
+.logo-small {
   display: none;
 }
 
-.logo-small {
-  background-image: url(images/header/logo-brick-small.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: calc(50% - (334px / 2) / 2);
-  background-size: contain;
-  height: 114px;
-  width: calc(334px / 2);
-  background-position-x: center;
-}
-
-@media only screen and (min-width: 440px) {
-}
+/* @media only screen and (min-width: 440px) {
+} */
 .social-headers {
   display: none;
 }
@@ -43,187 +56,233 @@ nav {
   display: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  letter-spacing: 3px;
-  width: 82px;
-  padding: 22px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
 .burger {
   float: right;
   font-family: arial;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 4.4rem;
+  /* font-weight: 500; */
+  font-size: 2.9rem;
+  line-height: 3.2rem;
 }
 
 .burger a {
   text-decoration: none;
-  color: #F8EBD1;
+  color: #000;
   padding: 0 10px;
-  margin-right: 5px;
+  /* margin-right: 5px; */
 }
 
 .burger a:hover {
-  background-color: #111;
+  background-color: #000;
+  color: #fff;
 }
 
-.comic-frame {
-  background-color: #333333;
+.content {
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 20px;
+}
+
+.main-content {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+/* .featured-first {
+  border-right: 1px solid #FFFFFF;
+  width: 50%;
+  height: 500px;
+  float: left;
+}
+
+.featured-first-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   width: 100%;
-  max-width: 440px;
-  height: auto;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+} */
+
+.featured-content {
+  position: relative;
+  overflow: hidden;
 }
 
-.panels img {
-  width: 91%;
-  max-width: 400px;
-  padding: 4.545% 4.545% 0;
-}
-
-.panel-4 {
-  padding-bottom: 4.545%;
-}
-
-.comic-nav-container {
-  background-color: #333333;
+.featured-full {
+  /* border-right: 1px solid #FFFFFF; */
   width: 100%;
-  max-width: 440px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  max-height: 300px;
+  position: relative;
+}
+.Hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.featured-half {
+  width: 100%;
+  height: 100%;
+  max-height:300px;
+  position: relative;
 }
 
-.comic-nav {
-  height: 75px;
-  width: 300px;
-  margin: auto;
-  padding-bottom: 20px;
-}
+.Hero-headingContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  float: none;
+  z-index: 10;
+  padding: 1.25rem;
+  }
 
-.clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
-.nav-first img {
-  height: 73px;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
+.post-category {
   float: left;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 5px;
+  letter-spacing: 1px;
 }
 
-.nav-first img:hover {
-  background-color: #111;
+.cat-movies {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#0049b2;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-previous img {
-  height: 73px;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
-  float: left;
+.cat-tv {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#85000c;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-previous img:hover {
-  background-color: #111;
+.cat-music {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#007f00;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-next img {
-  height: 73px;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
-  float: left;
+.cat-culture {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#8000aa;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-next img:hover {
-  background-color: #111;
+.cat-games {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#AE4300;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-last img {
-  height: 73px;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid #999;
-  border-right: 1px solid #999;
-  float: left;
+.cat-books {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#007b82;
+  box-shadow: 1px 1px #000;
 }
 
-.nav-last img:hover {
-  background-color: #111;
+.cat-live {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#8F004F;
+  box-shadow: 1px 1px #000;
 }
 
-.mobile-buttons {
-  width: 170px;
-  margin: auto;
+.cat-podcasts {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color:#7F7800;
+  box-shadow: 1px 1px #000;
 }
 
-.mobile-social-share {
+.cat-reviews {
+  display: inline;
+  padding: 0.2em 0.3em;
+  background-color: #444;
+  box-shadow: 1px 1px #000;
+}
+
+.Hero-heading {
+  clear:both;
+  font-family: 'PT Sans';
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 5px;
+  letter-spacing: 1px;
+}
+
+.post-byline {
+  padding-bottom: 10px;
+  margin: 0;
+  font-family: 'PT Sans';
+  font-size: 13px;
+  color: #d8d8d8;
+  text-shadow: 1px 1px #000; 
+}
+
+.post-byline a {
+  color: #d8d8d8;
+}
+
+.post-author {
+  text-transform: uppercase;
+}
+
+.post-author:hover {
+  color: #EBEBEB;
+}
+
+.post-tease {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  margin: 0;
+}
+.article-header img {
+  width: 100%;
+}
+
+.article-info {
   text-align: center;
-  height: 50px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.mobile-social-share img {
-  height: 50px;
-  float: left;
-}
-
-.mobile-social-share a:nth-child(2) img {
-  margin: 0 10px;
-}
-
-.social-share {
-  display: none;
-}
-
-.sub-comic {
-  width: 100%;
-  max-width: 440px;
-  margin: 20px auto;
-}
-
-.comic-info {
-  padding: 20px;
-  background-color: #F8EBD1;
-  height: 750px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+.article-info a {
+  text-decoration: none;
 }
 
 h1 {
   margin: 0;
-  font-family: 'PT Sans Narrow';
-  font-size: 25px;
+  font-family: 'PT Sans';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'PT Sans';
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -231,72 +290,109 @@ p {
   font-family: 'PT Sans';
 }
 
-.date {
-  padding-bottom: 20px;
-  margin: 0;
-  font-family: 'PT Sans';
-  font-size: 16px;
-}
 
-.sidebar-right {
-  background-color: #F8EBD1;
-  height: 340px;
+.main-lists {
+  display: none;
+}
+.twitter-container {
+  /* height: 340px; */
   margin-top: 20px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .twitter-feed {
-  width: auto;
-  padding: 20px;
+  width: 100%;
+}
+
+.spotify-container {
+  display: none;
 }
 
 .footer {
-  background-color: #333333;
+  background-color: #000;
   clear: left;
   width: 100%;
   height: 94px;
   margin: auto;
-  border-top: 6px solid #C13738;
+  padding-top: 15px;
 }
 
 .footer p {
+
   text-align: center;
   color: #fff;
 }
 
 /* Pages CSS */
 
-.header-image {
-  width: 100%;
-  max-width: 440px;
-  margin: auto;
-  margin-top: 50px;
-}
-
-.header-image img {
-  width: 100%;
-  margin: auto;
+.header-title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .page-text {
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #F8EBD1;
-  height: auto;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   padding: 20px;
+  height: auto;
   overflow: auto;
 }
 
+/* Movies */
+.movies-header {
+  padding:15px;
+  background-color: #0049b2;
+}
+
+/* TV */
+.tv-header {
+  padding: 15px;
+  background-color: #85000c;
+}
+
+/* Music */
+.music-header {
+  padding: 15px;
+  background-color: #2bad00;
+}
+
+/* Games */
+/* .games-header {
+  padding: 15px;
+}  background-color: #B96900; */
+
+
+/* Culture */
+.culture-header {
+  padding: 15px;
+  background-color: #5a008c;
+}
+
+/* Reviews */
+
+.reviews-lists {
+  display: none;
+}
+.reviews-header {
+  padding: 15px;
+  background-color: #444;
+}
 
 /* About */
+.about-content{
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.about-header {
+  padding: 15px;
+  background-color: #444;
+}
 
 .question {
   font-weight: bold;
 }
-
-/* Cast */
-
 .characters-container {
   width: 100%;
   display: block;
@@ -315,24 +411,35 @@ p {
     margin: 5 0 16.75px 0;
 }
 
-@media only screen and (min-width: 650px) {
-  nav {
-    width: 85%;
-    max-width: 850px;
-    margin: auto;
-    margin-top: 100px;
+@media only screen and (min-width: 800px) {
+
+  header {
+    height: 100px;
+    width: 100%;
   }
+  
+  .logo {
+    float: left;
+    display: block;
+    position: initial;
+    width: 200px;
+    z-index: initial;
+    margin-top: 25px;
+    margin-left: 60px
+  }
+  
   .social-headers {
     height: 32px;
     display: block;
     float: right;
-    margin-top: -40px;
+    margin-top: 55px;
+    margin-right: 60px;
+    
   }
   .social-headers img {
     float: left;
     width: 32px;
-    background-color: #333333;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    background-color: #000;
   }
   .social-headers a:nth-child(1):hover img {
     background-color: #3b5998;
@@ -349,186 +456,363 @@ p {
   .logo-small {
     display: none;
   }
-  .logo {
-    float: left;
-    display: block;
-    width: calc(336px / 2);
-    height: calc(274px / 2);
-    background-image: url(images/header/logo-brick.png);
-    background-size: calc(336px / 2) calc(274px / 2);
-    margin-top: -43px;
-    margin-left: -13px;
-    margin-bottom: 20px;
+   nav {
+    background: #000;
+    padding: 0 60px;
+    /* max-width: 850px;
+    margin: auto;
+   margin-top: 100px;  */
   }
+
   .menu {
     display: block;
+  } 
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+  }
+  
+  .navcat {
+    font-weight: bold;
+    float: left;
+  }
+
+  .navcat li a {
+    padding: 0.95em;
+  }
+  
+  .navsub li a {
+    line-height: 1.7em;
+    padding: 0.95em;
+    font-size: 14px;
+  }
+  /* li a:hover {
+    background-color: #111;
+  } */
+
+  li:nth-child(1):hover {
+    background-color: #0049b2 ;
+  }
+
+  li:nth-child(2):hover {
+    background-color: #85000c;
+  }
+
+  li:nth-child(3):hover {
+    background-color: #007f00;
+  }
+
+  li:nth-child(4):hover {
+    background-color: #5a008c;
+  }
+
+  /* li:nth-child(5):hover {
+    background-color: #B96900;
+  } 
+  
+  .li:nth-child(6):hover {
+    background-color: #007b82;
+  }*/
+  
+  .navsub li:hover {
+    background-color: #444;
   }
   .burger {
     display: none;
   }
-  .comic-frame {
-    width: 85%;
-    max-width: 850px;
-    overflow: auto;
+  .content {
+    padding: 0 60px;
+    border-bottom: none;
   }
-  .panels img {
-    width: 47%;
-    max-width: 400px;
+
+  .main-content {
+    height:1600px;
+    padding-bottom: 20px;
+  }
+
+  .featured-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .featured-full {
+    /* border-right: 1px solid #FFFFFF; */
+    width: 50%;
+    height: 500px;
+    max-height: 500px;
+    position: relative;
     float: left;
-    padding: 2% 0 0 2%;
   }
-  .panel-4 {
-    padding-bottom: 121%;
+  .Hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
   }
-  .comic-nav-container {
-    width: 85%;
-    max-width: 850px;
-    height: 90px;
+  .featured-half {
+    width: 50%;
+    height: 250px;
+    float: left;
+    position: relative;
   }
-  .comic-nav {
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-    height: 75px;
-    width: 96%;
-    margin: auto;
-    padding-bottom: 0;
+  
+  .Hero-headingContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    float: none;
+    z-index: 10;
+    padding: 1.25rem;
+    }
+
+  .Hero-heading {
+    font-family: 'PT Sans';
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    line-height: 1.5;
   }
-  .clearfix:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
-  }
-  .mobile-social-share {
+
+  .mobile-featured {
     display: none;
   }
-  .nav-first img {
-    border-top: 0;
-    border-bottom: 0;
-    height: 75px;
-    width: 75px;
-    float: left;
-  }
-  .nav-previous img {
-    border-top: 0;
-    border-bottom: 0;
-    height: 75px;
-    width: 75px;
-    float: left;
-  }
-  .nav-next img {
-    border-top: 0;
-    border-bottom: 0;
-    height: 75px;
-    width: 75px;
-    float: left;
-  }
-  .nav-last img {
-    border-top: 0;
-    border-bottom: 0;
-    height: 75px;
-    width: 75px;
-    float: left;
-  }
-  .social-share {
-    display: block;
-  }
-  .social-share img {
-    float: right;
-    height: 50px;
-    margin: 12.5px 0;
-  }
-  .social-share a:nth-child(2) img {
-    margin: 12.5px 10px;
-  }
-  .sub-comic {
-    width: 85%;
-    max-width: 850px;
-    overflow: auto;
-  }
-  .header-image {
-    width: 80%;
-    max-width:850px;
-    margin: auto;
-  }
-  .header-image img {
+  .main-lists {
+    display:block;
+    height: 1070px;
     width: 100%;
-    margin: auto;
+    margin-top: 20px;
   }
-  .page-text {
-    width: 65%;
-    max-width: none;
+  
+  .main-lists .Hero-heading {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    line-height: 1.2;
   }
-}
 
-@media only screen and (min-width: 900px) {
-  nav {
-    width: 90%;
-    max-width: none;
-    margin: auto;
-    margin-top: 100px;
+  .lists-headings {
+    display: inline;
+    font-family: 'PT Sans';
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.2em 0.4em;
+    letter-spacing: 2px;
   }
-  .content {
-    width: 90%;
-    margin: auto;
+  .latest-posts {
+    width: 30.66%;
+    height: 100%;
+    float: left;
+    padding: 0 1% 0 2%;
   }
-  .comic-frame {
+  .latest-first {
     width: 100%;
-    max-width: none;
-    overflow: auto;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 20px;
   }
-  .panels img {
+
+  .latest-second, .latest-third, .latest-fourth, .latest-fifth, .reviews-second, .reviews-third, .reviews-fourth, .reviews-fifth, .favorites-second, .favorites-third, .favorites-fourth, .favorites-fifth {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  /* .latest-fifth, .reviews-fifth, .favorites-fifth {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 10px;
+  } */
+
+  .latest-reviews {
+    width: 30.66%;
+    height: 100%;
+    float: left;
+    padding: 0 1% 0 1%;
+  }
+  .reviews-first {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .favorites {
+    width: 30.66%;
+    height: 100%;
+    float: left;
+    padding: 0 2% 0 1%;
+  }
+
+  .favorites-first {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 20px;
+  }
+
+
+  .media-content {
+    width: 100%;
+    height: 450px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+  }
+
+  .twitter-container {
+    float: left;
+    padding: 20px 1% 20px 2%;
+    margin: 0;
+    width: 47%;
+  }
+  
+  .twitter-feed {
+    width: 100%;
+  }
+
+  .spotify-container {
+    display: block;
+    float: right;
+    padding: 20px 2% 20px 1%;
+    width: 47%;
+  }
+
+  .spotify-playlist {
+    width: 100%;
+  }
+
+  /* Reviews */
+
+  .reviews-lists {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .movies-reviews-heading {
+    display: inline;
+    font-family: 'PT Sans';
+    color: #fff;
+    background: #0049b2;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.2em 0.4em;
+    letter-spacing: 2px;
+  }
+
+  .tv-reviews-heading {
+    display: inline;
+    font-family: 'PT Sans';
+    color: #fff;
+    background: #85000c;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.2em 0.4em;
+    letter-spacing: 2px;
+  }
+
+  .music-reviews-heading {
+    display: inline;
+    font-family: 'PT Sans';
+    color: #fff;
+    background: #007f00;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.2em 0.4em;
+    letter-spacing: 2px;
+  }
+
+  .culture-reviews-heading {
+    display: inline;
+    font-family: 'PT Sans';
+    color: #fff;
+    background: #5a008c;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.2em 0.4em;
+    letter-spacing: 2px;
+  }
+
+  .movies-reviews, .tv-reviews, .music-reviews, .culture-reviews {
     width: 22.5%;
-    max-width: 400px;
     float: left;
-    padding: 2% 0 0 2%;
   }
-  .panel-4 {
-    padding-bottom: 32%;
+  
+  .movies-reviews {
+    padding: 0 1% 0 2%
   }
-  .comic-nav-container {
-    width: 100%;
-    max-width: none;
+  
+  .tv-reviews {
+    padding: 0 1% 0 1%
   }
-  .comic-nav {
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-    height: 75px;
-    width: 96%;
-    margin: auto;
+  .music-reviews {
+    padding: 0 1% 0 1%
   }
-  .clearfix:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
+  /* .games-reviews {
+    padding: 0 1% 0 1%
+  } */
+  .culture-reviews {
+    padding: 0 2% 0 1%
   }
 
-  .sub-comic {
+  .movies-reviews-first, .tv-reviews-first {
     width: 100%;
-    max-width: none;
-    overflow: auto;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 20px;
   }
-  .comic-info {
-    width: 60%;
-    float: left;
+
+  .movies-reviews-second, .movies-reviews-third, .movies-reviews-fourth, .movies-reviews-fifth, .tv-reviews-second, .tv-reviews-third, .tv-reviews-fourth, .tv-reviews-fifth, .music-reviews-second, .music-reviews-third, .music-reviews-fourth, .music-reviews-fifth, .culture-reviews-first, .culture-reviews-second, .culture-reviews-third, .culture-reviews-fourth, .culture-reviews-fifth {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    position: relative;
+    margin-top: 10px;
   }
-  .sidebar-right {
-    width: 34%;
-    max-width: none;
-    float: right;
-    margin-top: 0;
+
+  .reviews-lists .post-category {
+    font-size: 11px;
   }
-  .header-image {
-    width: 80%;
-    max-width: none;
+  .reviews-lists .Hero-heading {
+    font-size: 18px;
+    font-family: 'PT Sans';
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    line-height: 1.2;
   }
-  .page-text {
-    width: 65%;
-    max-width: none;
+  .reviews-lists .post-byline {
+    padding-bottom: 5px; 
   }
-}
+  }
+  
