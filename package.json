@@ -1,5 +1,5 @@
 {
-    "name": "jacobscript",
+    "name": "werdzahn",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
@@ -16,7 +16,7 @@
         "express-handlebars": "^3.0.0",
         "opn": "^5.1.0"
     },
-    "repository": "ssh://git@github.com:wordstosong/jacobscript.git",
+    "repository": "ssh://git@github.com:wordstosong/werdzahn.git",
     "devDependencies": {
         "browser-sync": "^2.18.12",
         "nodemon": "^1.11.0"
