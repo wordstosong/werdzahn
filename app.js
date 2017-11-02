@@ -47,6 +47,11 @@ app.get('/about', function (req, res) {
     res.render('about', { title: title + ' | About' });
 });
 
+// blog posts
+
+app.get('/2017/09/05/the-spider-inside-the-man', function (req, res) {
+    res.render('2017/09/05/the-spider-inside-the-man', { title: title + ' | The Spider Inside The Man' });
+});
 
 
 
