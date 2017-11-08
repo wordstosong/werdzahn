@@ -65,6 +65,7 @@ nav {
 .menu a.burger:hover {
   background-color: #000;
   color: #fff;
+  transition: 0.3s;
 }
 
 .menu.responsive {
@@ -115,22 +116,27 @@ li a {
 
 li:nth-child(1):hover {
   background-color: #0049b2 ;
+  transition: 0.3s;
 }
 
 li:nth-child(2):hover {
   background-color: #85000c;
+  transition: 0.3s;
 }
 
 li:nth-child(3):hover {
   background-color: #007f00;
+  transition: 0.3s;
 }
 
 li:nth-child(4):hover {
   background-color: #5a008c;
+  transition: 0.3s;
 }
 
 .navsub li:hover {
   background-color: #444;
+  transition: 0.3s;
 }
 
 .content {
@@ -320,6 +326,7 @@ li:nth-child(4):hover {
 
 .post-author:hover {
   color: #EBEBEB;
+  transition: 0.3s;
 }
 
 .post-tease {
@@ -567,12 +574,15 @@ p {
   }
   .social-headers a:nth-child(1):hover img {
     background-color: #3b5998;
+    transition: 0.3s;
   }
   .social-headers a:nth-child(2):hover img {
     background-color: #00aced;
+    transition: 0.3s;
   }
   .social-headers a:nth-child(3):hover img {
     background-color: #32506d;
+    transition: 0.3s;
   }
   .social-headers a:nth-child(2) img {
     margin: 0 5px;
@@ -636,30 +646,37 @@ p {
 
   li:nth-child(1):hover {
     background-color: #0049b2 ;
+    transition: 0.3s;
   }
 
   li:nth-child(2):hover {
     background-color: #85000c;
+    transition: 0.3s;
   }
 
   li:nth-child(3):hover {
     background-color: #007f00;
+    transition: 0.3s;
   }
 
   li:nth-child(4):hover {
     background-color: #5a008c;
+    transition: 0.3s;
   }
 
   /* li:nth-child(5):hover {
     background-color: #B96900;
+    transition: 0.3s;
   } 
   
   .li:nth-child(6):hover {
     background-color: #007b82;
+    transition: 0.3s;
   }*/
   
   .navsub li:hover {
     background-color: #444;
+    transition: 0.3s;
   }
   .menu a.burger {
     display: none;
